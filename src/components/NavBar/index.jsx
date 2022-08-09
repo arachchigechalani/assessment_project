@@ -47,6 +47,7 @@ export default function NavBar() {
                         </Grid>
 
                     </Typography>
+                    <Button color="black" style={{fontSize:'19px'}}><h3><b>Logout</b></h3></Button>
                     <Button color="inherit"><h3><b>chanu</b></h3></Button>
                 </Toolbar>
             </AppBar>

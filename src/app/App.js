@@ -1,13 +1,11 @@
-import '../App.css';
+/*import '../App.css';*/
 import React, {useState} from "react";
-import CustomerManage from "../pages/CustomerManage";
-import CarManage from "../pages/CarManage";
-import ProductManage from "../pages/productManage";
 import Home from "../pages/home";
 import { Route,BrowserRouter,Routes } from 'react-router-dom'
 import Login from "../pages/login";
 import ButtonAppBar from "../components/NavBar";
 import PrivateRoute from "../privateRoute";
+import Test from "../pages/Test";
 
 function App() {
 
@@ -29,10 +27,15 @@ function App() {
                 </Route>
                 <Route path="/" element={<Login setLogged={changeState}/>} />
 
+
+
+                <Route path="/test" element={<Test setLogged={changeState}/>} />
+
                 {/*<Route path="/carManage" element={<CarManage/>} />
                 <Route path="/productManage" element={<ProductManage/>} />
-                <Route path="/customerManage" element={<CustomerManage/>} />
-                <Route path="/buttonAppBar" element={<ButtonAppBar/>} />*/}
+                <Route path="/customerManage" element={<CustomerManage/>} />*/}
+
+                {/*<Route path="/buttonAppBar" element={<ButtonAppBar/>} />*/}
             </Routes>
         </BrowserRouter>
 
