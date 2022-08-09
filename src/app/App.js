@@ -6,6 +6,9 @@ import Login from "../pages/login";
 import ButtonAppBar from "../components/NavBar";
 import PrivateRoute from "../privateRoute";
 import Test from "../pages/Test";
+import CartManage from "../pages/CarManage";
+import ProductManage from "../pages/productManage";
+import CustomerManage from "../pages/CustomerManage";
 
 function App() {
 
@@ -30,10 +33,12 @@ function App() {
 
 
                 <Route path="/test" element={<Test setLogged={changeState}/>} />
-
-                {/*<Route path="/carManage" element={<CarManage/>} />
+                <Route path="/cartManage" element={<CartManage/>} />
                 <Route path="/productManage" element={<ProductManage/>} />
-                <Route path="/customerManage" element={<CustomerManage/>} />*/}
+                <Route path="/customerManage" element={<CustomerManage/>} />
+                {/*<Route path="/carManage" element={<CarManage/>} />
+
+                */}
 
                 {/*<Route path="/buttonAppBar" element={<ButtonAppBar/>} />*/}
             </Routes>
